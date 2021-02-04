@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Result">
+   <children>
+      <Label layoutX="113.0" layoutY="20.0" prefHeight="57.0" prefWidth="350.0" text="            Winner">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label fx:id="result" layoutX="132.0" layoutY="114.0" prefHeight="57.0" prefWidth="297.0" styleClass="winner" stylesheets="@welcomeStyle.css" text="                                                    " textAlignment="CENTER" />
+
+   </children>
+</AnchorPane>

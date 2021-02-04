@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #8E44AD;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TicTacToe">
+   <children>
+
+      <Label layoutX="218.0" layoutY="14.0" prefHeight="17.0" prefWidth="137.0" text="              Game Scene  " />
+<!--       <HBox fx:controller="TicTacToe">-->
+      <GridPane fx:id="board" gridLinesVisible="true" layoutX="181.0" layoutY="174.0" prefHeight="200.0" prefWidth="309.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="174.0">
+
+        <columnConstraints>
+          <ColumnConstraints fx:id="col1" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="69.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="78.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+             <Text text="" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Text text="" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <Text text="" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+             <Text text="" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Text text="" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Text text="" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+             <Text text="" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Text text="" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Text text="" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+
+      </GridPane>
+<!--       </HBox>-->
+      <Button layoutX="283.0" layoutY="114.0" mnemonicParsing="false" onAction="#createBoard" prefHeight="27.0" prefWidth="65.0" text="Start" />
+      <ComboBox fx:id="difficultyX" layoutX="43.0" layoutY="58.0" prefHeight="27.0" prefWidth="164.0" promptText="Select Difficulty for X">
+          <items>
+              <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Beginner" />
+                  <String fx:value="Novice" />
+                  <String fx:value="Expert" />
+              </FXCollections>
+          </items>
+      </ComboBox>
+      <ComboBox fx:id="numGames" layoutX="428.0" layoutY="58.0" prefWidth="150.0" promptText="Number of games">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="1" />
+               <String fx:value="2" />
+               <String fx:value="3" />
+                <String fx:value="4" />
+                <String fx:value="5" />
+                <String fx:value="6" />
+                <String fx:value="7" />
+                <String fx:value="8" />
+                <String fx:value="9" />
+                <String fx:value="10" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <ComboBox fx:id="difficultyO" layoutX="236.0" layoutY="58.0" prefHeight="27.0" prefWidth="164.0" promptText="Select Difficulty for O">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Beginner" />
+               <String fx:value="Novice" />
+               <String fx:value="Expert" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Button fx:id="exit" layoutX="503.0" layoutY="18.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+      <Button fx:id="Rules" layoutX="78.0" layoutY="18.0" mnemonicParsing="false" onAction="#displayGameRules" text="Rules of game" />
+      <Label fx:id="label" layoutX="71.0" layoutY="119.0" prefHeight="17.0" prefWidth="118.0" />
+      
+      
+   </children>
+</AnchorPane>

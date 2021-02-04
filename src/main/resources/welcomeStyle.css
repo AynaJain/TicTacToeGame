@@ -1,0 +1,14 @@
+.title{
+    -fx-text-fill: #f0ffff;
+    -fx-font-weight: bold;
+ -fx-text-alignment: center;
+}
+
+.bodybg{
+-fx-background-size: 100% 100%;
+}
+
+.winner {
+-fx-font-weight: bold;
+ -fx-text-fill: #105fde;
+}
